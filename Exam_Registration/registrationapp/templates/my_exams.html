@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="container mb-5 mt-5 py-5">
 <h2>My Registered Exams</h2>
 {% if registrations %}
-<table border="1">
+<table class="table table-stripped">
     <tr>
         <th>Exam</th>
         <th>Date</th>
@@ -14,10 +15,12 @@
         <td>{{ registration.exam.title }}</td>
         <td>{{ registration.exam.date }}</td>
         <td>{{ registration.exam.duration }} minutes</td>
+        
     </tr>
     {% endfor %}
 </table>
 {% else %}
 <p>You have not registered for any exams yet.</p>
 {% endif %}
+</div>
 {% endblock %}
