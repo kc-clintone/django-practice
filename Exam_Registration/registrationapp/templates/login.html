@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container items-center">
+  <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+
+    <div class="form-group">
+      {{form.username.label_tag}}
+      {{form.username}}
+    </div>
+
+    <button type="submit">Login</button>
+  </form>
+</div>
+{% endblock %}

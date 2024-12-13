@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>My Registered Exams</h2>
+{% if registrations %}
+<table border="1">
+    <tr>
+        <th>Exam</th>
+        <th>Date</th>
+        <th>Duration</th>
+    </tr>
+    {% for registration in registrations %}
+    <tr>
+        <td>{{ registration.exam.title }}</td>
+        <td>{{ registration.exam.date }}</td>
+        <td>{{ registration.exam.duration }} minutes</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>You have not registered for any exams yet.</p>
+{% endif %}
+{% endblock %}
