@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Events | Mkipaji Connect{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+  <h2 class="text-center mb-4">UPCOMING EVENTS</h2>
+  
+  <div class="row">
+    <ul class="d-flex flex-wrap gap-3">
+    {% for event in events %}
+      <li class="event-item">
+        <div class="my-card">
+        <img src="{{event.poster.url}}" alt="poster" style="max-width: 200px;">
+        <h4 class="text-bold mt-1">{{event.name}}</h4>
+        <span>{{event.time}}</span>
+        <span>{{event.date}}</span>
+        <p>{{event.description}}</p>
+        </div>
+	<a href="{% url 'register' %}" class="btn btn-primary">Register</a>
+      </li>
+    {% endfor %}
+  </ul>
+  </div>
+</div>
+{% endblock %}
+

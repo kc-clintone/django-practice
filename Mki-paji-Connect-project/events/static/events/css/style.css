@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Purple Navbar */
+.bg-purple {
+    background-color: #6a0dad;
+    height: 4rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('/static/events/images/IMG_9247.JPG') no-repeat center center/cover;
+    color: white;
+}
+
+/* Top Transparent Rectangle */
+.top-banner {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    margin-top: 0.01rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+   
+}
+
+.top-banner-text {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Call to Action Rectangle */
+.cta-banner {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    color: black;
+    text-align: center;
+    position: absolute;
+    margin-top: 3.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3rem;
+}
+
+/* Center Logo */
+.center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    size: 10rem;
+}
+
+.center-logo img {
+    width: 120px;
+}
+
+/* Footer Rectangle */
+.footer-banner {
+    background: rgba(0, 0, 0, 0.6);
+    /* padding: 15px; */
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    align-items: center;
+}
+
+.social-icon img.icon-img {
+    width: 40px;    /* Adjust size as needed */
+    height: 40px;   /* Maintain square shape */
+    transition: transform 0.3s ease;
+}
+
+.social-icon img.icon-img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* General styling for the hero section */
+.hero-section {
+    background-color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Event grid styling */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* Individual event poster container */
+.event-card {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0;
+}
+
+/* Event poster image styling */
+.event-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Register button styling */
+.event-card .register-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.event-card .register-btn:hover {
+    background-color: #218838;
+}
+
+/* Dropdown button styling */
+.event-card .details-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+}
+
+.event-card .details-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown details container */
+.event-details {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    display: none;
+    z-index: 10;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Show the event details on hover */
+.event-card:hover .event-details {
+    display: block;
+}
+
+/* Event details text */
+.event-details p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.my-card{
+    height: 400px;
+    width: 200px;
+
+
+}
+
+.my-card img{
+    height: 40%;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+}
+
+.event-item{
+    
+}
+

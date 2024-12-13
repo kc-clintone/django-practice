@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Mkipaji Connect{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-container">
+        <!-- Top Transparent Rectangle -->
+        <div class="top-banner">
+            <h2 class="top-banner-text">Discover opportunities to connect and grow.</h2>
+        </div>
+
+        <!-- Call to Action Rectangle -->
+        <div class="cta-banner">
+            <p class="cta-text">Explore our event page now and sign-up to be part of something impactful and unforgettable.</p>
+        </div>
+
+        <!-- Footer Rectangle with Contact Info -->
+        <div class="footer-banner">
+            <div class="footer-contact">
+            <a href="https://wa.me/yourwhatsapplink" class="social-icon">
+                <img src="{% static 'events/images/Splash_Whatsapp_Icon_avkvqz.png' %}" alt="WhatsApp" class="icon-img">
+            </a>
+            <a href="https://instagram.com/yourinstagram" class="social-icon">
+                <img src="{% static 'events/images/Splash_Instagram_Icon_PNG_pppfmu.png' %}" alt="Instagram" class="icon-img">
+            </a>
+            <a href="https://yourwebsite.com" class="social-icon">
+                <img src="{% static 'events/images/website.png' %}" alt="Website" class="icon-img">
+            </a>
+            <a href="https://yourwebsite.com" class="social-icon">
+                <img src="{% static 'events/images/Splash_Facebook_Lite_Icon_PNG_ykgl9v.png' %}" alt="Website" class="icon-img">
+            </a>
+        </div> 
+
+            <!-- Center Logo -->
+        <div class="center-logo">
+            <img src="{% static 'events/images/logo-2-of-mkipaji-transparent png file.png' %}" alt="Mkipaji Logo">
+        </div>
+
+        <div>
+            <p class="footer-text"><span>Empowering communities through talent, connections,</span>
+                                  <span>and impactful events.</span>
+            </p>
+        </div>
+    </div>
+   
+</section>
+{% endblock %}
